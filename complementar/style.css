@@ -223,8 +223,8 @@ MODAL
   
   background-color: #fff;
   
-  width: 800px;
-  height: 400px;
+  width: 95%;
+  height: 95%;
   
   margin: 0 auto;
   padding: 10px;
@@ -379,13 +379,16 @@ FORM
     .three {
         background-color: #fff;
         height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        
         transition-duration: 0.3s;
     }
 
     .menu-toggle {
         width: 40px;
         height: 30px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     /* fullscreen */
@@ -412,7 +415,7 @@ FORM
 
     .menu-section.on .menu-toggle {
         position: absolute;
-        right: 0;
+        right: 25px;
         top:15px;
     }
 
@@ -440,4 +443,10 @@ FORM
         display: block;
     }
     
+}
+
+@media (max-width: 320px){
+    #form h3 {
+        font-size: 2rem;
+    }
 }
