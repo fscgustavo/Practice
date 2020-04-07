@@ -1,13 +1,21 @@
 import React from 'react';
 
-import Nav from './Nav/Nav'
+import { Router } from 'react-router-dom'
+
+import GlobalStyle from './styles/global'
+import Header from './Header/Header'
+import history from './history'
+import PageRoutes from './routes'
+
+
 const App = () => {
     return(
-        <>
-            <Nav/>
-            <h1> Hello World! </h1>
-        </>
+        <Router history={history}>
+            <Header/>
+            <PageRoutes/>
+            <GlobalStyle/>
+        </Router>
     );
 }
 
-export default App;
+export default App
