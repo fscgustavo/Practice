@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import GlobalStyle from './styles/global'
 import Header from './Header/Header'
